@@ -21,11 +21,30 @@ const profileLinks = {
   leetcode: "https://leetcode.com/u/sunkarakrishnachaitanya/"    // Replace with your LeetCode URL
 };
 
-const projects = [
+
+  const projects = [
+  {
+    title: "Student Performance Analysis",
+    category: "DATA ANALYTICS",
+    description: "Analyze student marks, subject-wise performance, and academic trends using Python data analysis and visualization techniques.",
+    technologies: ["Python", "Pandas", "NumPy", "Matplotlib"],
+    image: "projects/student-performance.svg",
+    github: "#",
+    demo: "#"
+  },
+  {
+    title: "Smart Expenses Tracker",
+    category: "FINTECH",
+    description: "A personal expense tracking project designed to record expenses, organize spending by category, and monitor monthly budgets.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    image: "projects/smart-expenses.svg",
+    github: "#",
+    demo: "https://smexpenses.vercel.app/"
+  },
   {
     title: "E-Commerce Sales Analysis",
     category: "DATA ANALYTICS",
-    description: "Analyzed e-commerce sales data using Python and Power BI to clean data, identify patterns and create business dashboards.",
+    description: "Analyze e-commerce sales data using Python and Power BI to identify sales patterns and create business dashboards.",
     technologies: ["Python", "Pandas", "Power BI"],
     image: "projects/ecommerce.svg",
     github: "#",
@@ -34,22 +53,14 @@ const projects = [
   {
     title: "LoanEase",
     category: "FINTECH",
-    description: "A loan eligibility and EMI calculator that estimates eligibility from financial details and presents suitable loan options.",
+    description: "A loan eligibility and EMI calculator concept for estimating monthly repayments and exploring loan options.",
     technologies: ["HTML", "CSS", "JavaScript"],
     image: "projects/loanease.svg",
     github: "#",
     demo: "#"
-  },
-  {
-    title: "Air Pollution Awareness Study",
-    category: "COMMUNITY SERVICE",
-    description: "A community service study focused on awareness of air-pollution reduction methods using observations and survey-based findings.",
-    technologies: ["Research", "Survey", "Analysis"],
-    image: "projects/air-pollution.svg",
-    github: "#",
-    demo: "#"
   }
 ];
+
 
 const certificates = [
   {
