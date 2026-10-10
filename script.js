@@ -259,3 +259,33 @@ const observer = new IntersectionObserver(entries => {
   entries.forEach(e => { if(e.isIntersecting) e.target.classList.add("show"); });
 },{threshold:.1});
 document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+
+// LIGHT / DARK MODE TOGGLE
+
+const themeToggle = document.getElementById("themeToggle");
+
+function applyTheme(theme) {
+  document.body.dataset.theme = theme;
+
+  if (theme === "light") {
+    themeToggle.textContent = "🌙 Dark";
+    themeToggle.setAttribute("aria-label", "Switch to dark mode");
+  } else {
+    themeToggle.textContent = "☀️ Light";
+    themeToggle.setAttribute("aria-label", "Switch to light mode");
+  }
+
+  localStorage.setItem("portfolio-theme", theme);
+}
+
+// Restore previously selected theme
+const savedTheme = localStorage.getItem("portfolio-theme") || "dark";
+
+applyTheme(savedTheme);
+
+// Switch themes on button click
+themeToggle.addEventListener("click", () => {
+  const currentTheme = document.body.dataset.theme;
+
+  applyTheme(currentTheme === "dark" ? "light" : "dark");
+});

@@ -18,7 +18,15 @@
     <button class="menu" aria-label="Menu">☰</button>
     <div class="navlinks">
       <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
-      <a href="#certificates">Certificates</a><a href="#contact">Contact</a>
+      <a href="#certificates">Certificates</a><a href="#contact">Contact</a> <button
+  id="themeToggle"
+  class="theme-toggle"
+  type="button"
+  aria-label="Switch to light mode"
+  title="Switch theme"
+>
+  ☀️ Light
+</button>
     </div>
   </nav>
 </header>
@@ -92,18 +100,41 @@
   <div id="certificateGrid" class="certificate-grid reveal"></div>
 </section>
 
-<section id="profiles" class="section container">
-  <div class="heading reveal"><span>05</span><h2>Profiles</h2></div>
-  <div class="profiles reveal">
-    <a href="https://github.com/krishnachaitanya200624-design" target="_blank"><b>GH</b><span><strong>GitHub</strong><small>Projects & source code</small></span>↗</a>
-    <a id="linkedinCard" href="#" target="_blank"><b>in</b><span><strong>LinkedIn</strong><small>Professional profile</small></span>↗</a>
-    <a id="leetcodeCard" href="#" target="_blank"><b>LC</b><span><strong>LeetCode</strong><small>Problem solving</small></span>↗</a>
-  </div>
-</section>
+
+<div class="profiles reveal">
+  <a href="https://github.com/krishnachaitanya200624-design"
+     target="_blank" rel="noopener noreferrer">
+    <img class="profile-icon" src="assets/git.png" alt="GitHub">
+    <span>
+      <strong>GitHub</strong>
+      <small>Projects &amp; source code</small>
+    </span>
+    ↗
+  </a>
+
+  <a id="linkedinCard" href="#" target="_blank" rel="noopener noreferrer">
+    <img class="profile-icon" src="assets/link.png" alt="LinkedIn">
+    <span>
+      <strong>LinkedIn</strong>
+      <small>Professional profile</small>
+    </span>
+    ↗
+  </a>
+
+  <a id="leetcodeCard" href="#" target="_blank" rel="noopener noreferrer">
+    <img class="profile-icon" src="assets/leet.png" alt="LeetCode">
+    <span>
+      <strong>LeetCode</strong>
+      <small>Problem solving</small>
+    </span>
+    ↗
+  </a>
+</div>
+
 
 <section id="contact" class="section container">
   <div class="contact reveal">
-    <div><div class="label">LET'S CONNECT</div><h2>Let's build something useful.</h2><p>Open to internships, projects and learning opportunities.</p></div>
+    <div><div class="label>LET'S CONNECT</div><h2>Let's build something useful.</h2><p>Open to internships, projects and learning opportunities.</p></div>
     <a class="btn mainbtn" href="mailto:krishnachaitanya200624@gmail.com">Email me ↗</a>
   </div>
 </section>
